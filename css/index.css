@@ -1,0 +1,91 @@
+/*顶部区域*/
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+.top .wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.top .wrapper .top_left {
+    width: 190px;
+    height: 100%;
+    float:left;
+}
+.top .wrapper .top_left>h1 {
+    width: 100%;
+    height: 100%;
+}
+.top .wrapper .top_left>h1>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/nubia-logo.png);
+}
+.top .wrapper .top_right {
+    width: 740px;
+    height: 100%;
+    float: right;
+}
+.top .wrapper .top_right .nav {
+    width: 550px;
+    height: 100%;
+    float: left;
+}
+/*.top .wrapper .top_right .nav ul {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+.top .wrapper .top_right .nav ul li {
+    float: left;
+    margin-left: 40px;
+}
+.top .wrapper .top_right .nav li>a {
+    font-size: 16px;
+    font-weight:bold;
+    color: #fff;
+    line-height: 60px;
+}
+.top .wrapper .top_right .login {
+    width: 150px;
+    height: 100%;
+    float: right;
+}
+.top .wrapper .top_right .login>ul>li {
+    float: right;
+    margin-right: 20px;
+}
+.top .wrapper .top_right .login>ul>li>a {
+    font-size: 12px;
+    color: #999;
+    line-height: 60px;
+}
+.top .wrapper .top_right ul li>a:hover {
+    color: #e82c07;
+}
+.top .wrapper .top_right .login>ul>li:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/nubia-syb-all.png);
+    margin-top: 15px;
+}
+    /*广告区域*/
+.banner {
+    height: 860px;
+    background-color: red;
+    width: 1200px;
+}
+/*内容区域*/
+.content {
+    height: 1883px;
+    width: 100%;
+    background-color: blue;
+}
+/*底部区域*/
+.footer {
+    width: 1200px;
+    height: 396px;
+    background-color: green;
+}
