@@ -74,8 +74,182 @@
     /*广告区域*/
 .banner {
     height: 860px;
-    background-color: red;
+    /*width: 1200px;*/
+    /*margin:0 auto;*/
+}
+.banner .nav_out {
+    width: 100%;
+    height: 121px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 998;
+}
+.banner .nav {
+    height: 121px;
     width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    /*background-color: #fff;*/
+    /*z-index: 998;*/
+}
+.banner .nav>ul {
+    width: 100%;
+    height: 100%;
+    padding-left: 75px;
+    padding-right:75px;
+    box-sizing: border-box;
+}
+.banner .nav>ul>li {
+    float: left;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
+.banner .nav>ul>li img {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    margin-top:10px;
+}
+.banner .nav>ul>li p {
+    color: #999;
+}
+.banner .nav>ul>li p span {
+    color: #e82c07;
+}
+.banner .figure {
+    width: 100%;
+    height: 600px;
+    /*text-align: center;*/
+    overflow: hidden;
+    position: relative;
+}
+/*.banner .figure .banner_container {
+    width: 500%;
+    height: 600px;
+    background-color: red;
+    !*animation: move 5s linear 0s infinite normal;*!
+    margin-left: -1903px;
+}*/
+.banner .figure #list {
+    width: 300%;
+    height: 600px;
+    /*animation: move 5s linear 0s infinite normal;*/
+    /*margin-left: -1903px;*/
+}
+
+/*@keyframes move{
+    from{
+        margin-left:0;
+    }
+    to{
+        margin-left:-300%;
+    }
+}*/
+
+.banner .figure .banner_container>li {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+.banner .figure .banner_container>li>img {
+    display: inline-block;
+    height: 100%;
+    margin:0 -100%;
+}
+.banner .figure .num {
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -45px;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+}
+.banner .figure .num>li {
+    width: 8px;
+    height: 8px;
+    float: left;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+.banner .figure .num>li:hover {
+    transform: scale(1.2, 1.2);
+    border: 2px solid red;
+    background-color: transparent;
+}
+.banner .figure .num .on {
+    transform: scale(1.2, 1.2);
+    border: 2px solid red;
+    background-color: transparent;
+}
+.banner .vedio {
+    width: 1200px;
+    height: 250px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+.banner .vedio>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.banner .vedio>ul>li {
+    float: left;
+    width: 396px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+}
+.banner .vedio>ul>li>img {
+    display: inline-block;
+    height: 100%;
+    margin:0 -100%;
+}
+.banner .vedio .video_info {
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+}
+.banner .vedio .video_info>img {
+    margin-top: 20px;
+}
+.banner .vedio .video_info>h3 {
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+.banner .vedio .video_info>p {
+    color: #fff;
+}
+.banner .vedio>ul>li:hover {
+    opacity: 0.5;
+}
+.banner .vedio>ul>li:hover .video_info {
+    opacity: 1.0;
+}
+.banner .vedio>ul>li:hover .video_info img {
+    animation: sport 2s .5s ease-in-out infinite;
+}
+@keyframes sport {
+    20%{ transform: scale(.8); transform: scale(.8);}
+    40%{ transform: scale(1.2); transform: scale(1.2);}
+    60%{ transform: scale(.9); transform: scale(.9);}
+    80%{ transform: scale(1); transform: scale(1);}
+    100%{ transform: scale(1); transform: scale(1);}
 }
 /*内容区域*/
 .content {
